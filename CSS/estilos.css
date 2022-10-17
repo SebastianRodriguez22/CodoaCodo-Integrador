@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*navbar*/
+
+.navbar-expand-lg.navbar-dark{
+    background-color: #414a53;
+}
+
+.navbar-brand{
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+}  
+
+.navbar img{
+    width: 80px;
+    margin-right: 1rem;
+    padding: 0;
+}
+
+.navbar .navbar-toggler{
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.navbar .navbar-nav{
+    text-align: center;
+}
+
+.navbar .navbar-nav a:last-child{
+    color: #04af5a
+}
+
+
+/*HeroSection*/
+.hero{
+    background-image:url(../imagenes/ba1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #fcfcfc
+}
+
+.hero .sombra{
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    height: 100%;
+}
+
+.hero .contenedor-flex{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.hero .contenido{
+    width: 50%;
+    margin-bottom: 20vh;
+    text-align: right;
+}
+
+.hero .botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.hero .botones a{
+    color:#eaeef1;
+}
+
+.hero .boton{
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero .boton-transparent{
+    border: 1px solid #eaeef1;
+}
+
+.hero .boton-transparent:hover{
+    background-color: #ffffff8c;
+    color: #343a40;
+    border: 1px solid #ffffff8c;
+    transition: 0.5s;
+}
+
+.hero .boton-solid{
+    background-color: #04af5a;
+    border:1px solid #04af5a;
+}
+
+.hero .boton-solid:hover{
+    background-color: #00800080;
+    color:#eaeef1;
+    border:1px solid #00800080;
+    transition: 0.5s;
+}
+
+/*oradores*/
+
+.oradores .titulo{
+    text-align: center;
+    
+}
+
+.titulo h6{
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.oradores .contenedor-oradores{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.oradores .card{
+    width: 30%;
+    min-width: 300px;
+}
+
+.oradores .card img{
+    width: 100%;
+}
+
+.oradores .card :not(img){
+    padding: 0 1rem;
+}
+
+
+
+.card .habilidades{
+    margin-top: 1rem;
+    display: flex;
+}
+
+.card .habilidades h6{
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.3rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+}
+
+.card h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.3rem;
+}
+
+.card p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 0.3;
+    margin-bottom: 1rem;
+}
+
+.card .habilidades .amarillo{
+    background-color: #ffbb00;
+    border-radius: 5px;
+}
+
+.card .habilidades .celeste{
+    background-color: #00c3ff;
+    border-radius: 5px;
+    color: white;
+}
+
+.card .habilidades .gris{
+    background-color: grey;
+    border-radius: 5px;
+    color: white;
+}
+
+.card .habilidades .rojo{
+    background-color: #ad1436;
+    border-radius: 5px;
+    color: white;
+}
+
+/*llamado a la accion*/
+
+.container-cta{
+    margin-top: 1rem;
+}
+
+.container-cta{
+    display: flex;
+}
+
+.container-cta img{
+    width: 50vw;
+    margin: 0;
+}
+
+.container-cta .cta-content{
+    background-color: #343a40;
+    color:#eaeef1;
+    padding: 1rem;
+}
+
+.container-cta .cta-content h2{
+    font-weight: 600;
+}
+
+.container-cta .btn {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    color: #eaeef1;
+}
+
+.container-cta .btn-transparent{
+    border: 1px solid #eaeef1;
+}
+
+.container-cta .btn-transparent:hover{
+    background-color: #ffffff8c;
+    color: #212121;
+    border: #ffffff8c;
+    transition: 0.5s;
+}
+
+/*Formulario*/
+
+.form .title{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form .title h3{
+    font-size: 1rem;
+}
+
+.form .title .underline{
+    text-decoration: underline dotted #343a40;
+}
+
+.form .container-form{
+    width: 50vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form .container-form .nombre-apellido{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.form .container-form .input-name{
+    width: 49%;
+    padding: 0.75rem 0.55rem;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.form .container-form .input-about{
+    width: 100%;
+    padding: 0.75rem 0.55rem;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.form .container-form .input-name:focus{
+    outline: 1px solid #495057;
+}
+
+.form .container-form .input-about:focus{
+    outline: 1px solid #495057;
+}
+
+.form .container-form .btn-submit{
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.8rem 0;
+    font-size: 1.5rem;
+    background-color: #0a8324cc;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+}
+
+.form .container-form .btn-submit:hover{
+    background-color: #0a8324;
+    color:#ced4da;
+    transition: 0.5s;
+}
+
+/*footer*/
+
+.footer{
+    background-image: linear-gradient(to right, #004d7a, #008793);
+}
+
+.footer .container-footer{
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .container-footer a{
+    text-decoration: none;
+    color: #f0f3f5;
+    padding: 3rem 0;
+    text-align: center;
+    width: 100px;
+}
+
+.footer .container-footer a:hover{
+    color: #adb5bd;
+}
+
+
+@media(max-width: 992px){
+    .hero .contenido{
+        width: 100%;
+        margin-bottom: 20vh;
+        text-align: center;
+    }
+
+    .hero .botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .form .container-form{
+        width: 65vw;
+    }
+}
+
+@media(max-width: 768px){
+    .container-cta{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-cta img{
+        width: 100vw;
+    }
+
+    .container-cta .cta-content>* {
+        display: block;
+        text-align: center !important;
+    }
+
+    .cta-content .btn {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .form .container-form .nombre-apellido{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    .form .container-form .nombre-apellido .input-name{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .form .container-form{
+        width: 80vw;
+    }
+
+    .footer{
+        background-image: linear-gradient(to bottom, #004d7a, #008793);
+    }
+
+    .footer .container-footer{
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .footer .container-footer a{
+        padding: 0.5rem 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 576px){
+    .hero .botones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
